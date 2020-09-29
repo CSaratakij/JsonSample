@@ -11,13 +11,15 @@ public class PlayerData
     public override string ToString()
     {
         var result = $"UserID : {UserID}, ";
-        result += $"Position : x: {Position.x}, y: {Position.y}, z: {Position.z}";
+        result += $"Name : {Name}, ";
+        result += $"Position : (x: {Position.x}, y: {Position.y}, z: {Position.z})";
         return result;
     }
 
     public string ToStringDirectCall()
     {
         var result = $"UserID : {UserID}, ";
+        result += $"Name : {Name}, ";
         result += $"Position : {Position}";
         return result;
     }
